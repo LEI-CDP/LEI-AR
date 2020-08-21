@@ -5,11 +5,10 @@
 	<body style='margin : 0px; overflow: hidden;'>
 		<a-scene renderer='gammaOutput: true' vr-mode-ui='enabled: true' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 			<a-assets>				
-				<a-asset-item id="Middle_Phalanx-Model-glb" src="Objects/Middle_Phalanx-Model.glb"></a-asset-item>				
+				<img id="text" src="Objects/text.png">					
 			</a-assets>			
 			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Skull-Marker.patt'>
-				<a-entity geometry="primitive: plane; width: 4; height: auto" material="color: white" 
-text="color:black; value: The head of the femur is smooth and nearly hemispherical in shape, most of which is articular. The head of the femur articulates with the acetabulum of the pelvis forming the ‘hip joint’. The hip joint is a ball-and-socket joint that primarily aids in flexion and extension of the hindlimb. The ligament of the head of the femur extends from the acetabular fossa and connects to the head of the femur at the fovea capitis femoris, a shallow fossa located in the middle to caudomedial aspect of the head. "></a-entity>
+			<a-image src="#text"></a-image>
 			</a-marker>	
 			<a-entity id="rig" position="0 0 0"><a-entity camera></a-entity></a-entity>			
 		</a-scene>		
