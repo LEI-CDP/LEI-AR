@@ -4,7 +4,7 @@
 	<script src="Scripts/aframe-extras.min.js"></script>
 	<script>
 		var playing = false;
-		var intro = new Audio("speech.mp3");
+		var intro = new Audio("Objects/speech.mp3");
 		intro.addEventListener("ended",function(){intro.currentTime=0; playing=false;});
 		AFRAME.registerComponent('markerhandler', {init: function() {this.tick = AFRAME.utils/throttleTick(this.tick, 500, this);},
 							   tick: function(t, dt){
@@ -26,7 +26,7 @@
 				<img id="text" src="Objects/text.png">					
 			</a-assets>			
 			<a-marker id="F1" preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Marker.patt'>
-			<a-image src="#text" width="10" height="10" rotation="-90 0 0" position="0 0 0"></a-image>
+			<a-image src="#text" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 			</a-marker>	
 			<a-entity id="rig" position="0 0 0"><a-entity camera></a-entity></a-entity>			
 		</a-scene>		
