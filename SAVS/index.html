@@ -5,75 +5,51 @@
 	
 	
 	<body style='margin : 0px; overflow: hidden;'>
-	
-		<a-scene renderer='gammaOutput: true' vr-mode-ui='enabled: true' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-		
+		<a-scene renderer='gammaOutput: true' vr-mode-ui='enabled: false' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 		<a-assets>				
 			<img id="title1" src="Objects/Title/title1.png"></img>
-			
-			<img id="title2" src="Objects/Title/title2.png"></img>
-			
-			<img id="title31" src="Objects/Title/title31.png"></img>
-			
-			<img id="title32" src="Objects/Title/title32.png"></img>
-			
-			<img id="title41" src="Objects/Title/title41.png"></img>
-			
-			<img id="title42" src="Objects/Title/title42.png"></img>
-			
-			<img id="title51" src="Objects/Title/title51.png"></img>
-			
-			<img id="title52" src="Objects/Title/title52.png"></img>
-			
-			<img id="title53" src="Objects/Title/title53.png"></img>
-			
-			<img id="title61" src="Objects/Title/title61.png"></img>
-			
-			<img id="title62" src="Objects/Title/title62.png"></img>
-			
-			<img id="title7" src="Objects/Title/title7.png"></img>
-			
-			<img id="title81" src="Objects/Title/title81.png"></img>
-			
-			<img id="title82" src="Objects/Title/title82.png"></img>
-			
-			<img id="title9" src="Objects/Title/title9.png"></img>
-			
-			<img id="title101" src="Objects/Title/title101.png"></img>
-			
-			<img id="title102" src="Objects/Title/title102.png"></img>
-			
 			<img id="exp1" src="Objects/Exp/exp1.png"></img>
-			
+			<img id="title2" src="Objects/Title/title2.png"></img>
 			<img id="exp2" src="Objects/Exp/exp2.png"></img>
-			
+			<img id="title31" src="Objects/Title/title31.png"></img>
+			<img id="title31" src="Objects/Title/title32.png"></img>
 			<img id="exp3" src="Objects/Exp/exp3.png"></img>
-			
+			<img id="title41" src="Objects/Title/title41.png"></img>
+			<img id="title42" src="Objects/Title/title42.png"></img>
 			<img id="exp4" src="Objects/Exp/exp4.png"></img>
-			
+			<img id="title51" src="Objects/Title/title51.png"></img>
+			<img id="title52" src="Objects/Title/title52.png"></img>
+			<img id="title53" src="Objects/Title/title53.png"></img>
 			<img id="exp5" src="Objects/Exp/exp5.png"></img>
-			
+			<img id="title61" src="Objects/Title/title61.png"></img>
+			<img id="title62" src="Objects/Title/title62.png"></img>
 			<img id="exp6" src="Objects/Exp/exp6.png"></img>
-			
+			<img id="title7" src="Objects/Title/title7.png"></img>
 			<img id="exp7" src="Objects/Exp/exp7.png"></img>
-			
+			<img id="title81" src="Objects/Title/title81.png"></img>
+			<img id="title82" src="Objects/Title/title82.png"></img>
 			<img id="exp81" src="Objects/Exp/exp81.png"></img>
-			
 			<img id="exp82" src="Objects/Exp/exp82.png"></img>
-			
+			<img id="title9" src="Objects/Title/title9.png"></img>
 			<img id="exp9" src="Objects/Exp/exp9.png"></img>
-			
+			<img id="title101" src="Objects/Title/title101.png"></img>
+			<img id="title102" src="Objects/Title/title102.png"></img>
 			<img id="exp10" src="Objects/Exp/exp10.png"></img>
-			
 		</a-assets>			
 			
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title1.patt'>
 			<a-image src="#title1" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp1.patt'>
+			<a-image src="#exp1" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
 		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title2.patt'>
 			<a-image src="#title2" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>
+		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp2.patt'>
+			<a-image src="#exp2" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
 		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title31.patt'>
 			<a-image src="#title31" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
@@ -81,12 +57,20 @@
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title32.patt'>
 			<a-image src="#title32" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp3.patt'>
+			<a-image src="#exp3" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title41.patt'>
 			<a-image src="#title41" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title42.patt'>
 			<a-image src="#title42" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp4.patt'>
+			<a-image src="#exp4" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title51.patt'>
 			<a-image src="#title51" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>
@@ -96,61 +80,53 @@
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title53.patt'>
 			<a-image src="#title53" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp5.patt'>
+			<a-image src="#exp5" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title61.patt'>
 			<a-image src="#title61" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title62.patt'>
 			<a-image src="#title62" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp6.patt'>
+			<a-image src="#exp6" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title7.patt'>
 			<a-image src="#title7" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp7.patt'>
+			<a-image src="#exp7" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title81.patt'>
 			<a-image src="#title81" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title82.patt'>
 			<a-image src="#title82" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp81.patt'>
+			<a-image src="#exp81" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp82.patt'>
+			<a-image src="#exp82" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title9.patt'>
 			<a-image src="#title9" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
+		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp9.patt'>
+			<a-image src="#exp9" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
+		</a-marker>	
+		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title101.patt'>
 			<a-image src="#title101" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Title/Title102.patt'>
 			<a-image src="#title102" width="7" height="7" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>	
-		
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/X.patt'>
-			<a-image src="#exp1" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>				
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp2.patt'>
-			<a-image src="#exp2" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp3.patt'>
-			<a-image src="#exp3" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp4.patt'>
-			<a-image src="#exp4" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp5.patt'>
-			<a-image src="#exp5" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp6.patt'>
-			<a-image src="#exp6" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp7.patt'>
-			<a-image src="#exp7" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp81.patt'>
-			<a-image src="#exp81" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>	
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp82.patt'>
-			<a-image src="#exp82" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
-		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp9.patt'>
-			<a-image src="#exp9" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>			
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp/Exp10.patt'>
 			<a-image src="#exp10" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>			
