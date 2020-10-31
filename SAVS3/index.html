@@ -3,7 +3,7 @@
 	<script src="Scripts/aframe-ar.js"></script>
 	<script src="Scripts/aframe-extras.min.js"></script>
 	<body style='margin : 0px; overflow: hidden;'>
-	<a-scene renderer='gammaOutput: true' vr-mode-ui='enabled: true' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+	<a-scene renderer='gammaOutput: true' vr-mode-ui='enabled: false' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 		<a-assets>		
 			<img id="exp1" src="Objects/exp1.png"></img>
 			<img id="exp2" src="Objects/exp2.png"></img>
@@ -11,7 +11,8 @@
 		
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp1.patt'>
 			<a-image src="#exp1" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
-		</a-marker>				
+		</a-marker>
+	
 		<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Exp2.patt'>
 			<a-image src="#exp2" width="3" height="3" rotation="-90 0 0" position="0 0 0"></a-image>
 		</a-marker>			
